@@ -25,6 +25,15 @@
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/public/system" />
       <excludeFolder url="file://$MODULE_DIR$/components" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ruby/3.2.0/extensions/x86_64-darwin-22/3.2.0/bcrypt-3.1.19" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ruby/3.2.0/gems/bcrypt-3.1.19" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ruby/3.2.0/gems/devise-4.9.2" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ruby/3.2.0/gems/orm_adapter-0.5.0" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ruby/3.2.0/gems/responders-3.1.0" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ruby/3.2.0/gems/warden-1.2.9" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ruby/3.2.0/build_info" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ruby/3.2.0/doc" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ruby/3.2.0/plugins" />
     </content>
     <orderEntry type="jdk" jdkName="RVM: ruby-3.2.2" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
