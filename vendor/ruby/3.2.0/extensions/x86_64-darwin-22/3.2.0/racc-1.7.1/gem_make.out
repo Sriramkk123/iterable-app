@@ -1,0 +1,20 @@
+current directory: /Users/sriramkk/RubymineProjects/iterable-app/vendor/ruby/3.2.0/gems/racc-1.7.1/ext/racc/cparse
+/Users/sriramkk/.rvm/rubies/ruby-3.2.2/bin/ruby extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/sriramkk/RubymineProjects/iterable-app/vendor/ruby/3.2.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20231011-44607-nl4e4d sitelibdir\=./.gem.20231011-44607-nl4e4d clean
+
+current directory: /Users/sriramkk/RubymineProjects/iterable-app/vendor/ruby/3.2.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20231011-44607-nl4e4d sitelibdir\=./.gem.20231011-44607-nl4e4d
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/sriramkk/RubymineProjects/iterable-app/vendor/ruby/3.2.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20231011-44607-nl4e4d sitelibdir\=./.gem.20231011-44607-nl4e4d install
+/usr/local/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20231011-44607-nl4e4d/racc
+
+current directory: /Users/sriramkk/RubymineProjects/iterable-app/vendor/ruby/3.2.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20231011-44607-nl4e4d sitelibdir\=./.gem.20231011-44607-nl4e4d clean
