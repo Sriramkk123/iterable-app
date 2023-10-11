@@ -2,6 +2,8 @@
   Home Page
   <% if user_signed_in? %>
     <div> Welcome <%= current_user.email %> </div>
+    <%= button_to 'Event A', events_web_push_path(current_user), method: :post %>
+    <%= button_to 'Event B', events_mobile_push_path(current_user), method: :post %>
     <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
   <% else %>
     <%= button_to "Sign in", new_user_session_path %>
