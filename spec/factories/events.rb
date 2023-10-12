@@ -1,8 +1,16 @@
 FactoryBot.define do
   factory :event do
     name { "event" }
-    user_id { nil }
+    user
     event_type { 'web_push' }
+
+    trait :without_user do
+      user { nil }
+    end
+
+    trait :without_event_type do
+      event_type { nil }
+    end
 
     trait :wrong_event_type do
       event_type { 'wrong_event_type' }
