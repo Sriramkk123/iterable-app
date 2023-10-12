@@ -37,6 +37,17 @@ RSpec.describe Event, type: :model do
         expect(event_with_mobile_push_event_type).to be_valid
       end
 
+      it 'triggers send_email after creating a mobile_push event' do
+        iterable_io = instance_double(IterableIoService)
+        allow(IterableIoService).to receive(:new).and_return(iterable_io)
+        allow(iterable_io).to receive(:send_email)
+
+        event = build(:event, :mobile_push)
+        event.user_id = user.id
+        event.save
+
+        expect(iterable_io).to have_received(:send_email)
+      end
     end
   end
 end

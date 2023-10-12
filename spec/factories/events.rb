@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :event do
-    name { "web event" }
+    name { "event" }
     user_id { nil }
     event_type { 'web_push' }
 
@@ -15,5 +15,6 @@ FactoryBot.define do
     trait :mobile_push do
       event_type { 'mobile_push' }
     end
+
   end
 end
