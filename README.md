@@ -17,7 +17,11 @@ To start the application
 
    ```bash
    bundle install
+
+3. **Run migrations**
+   ```bash
+   rails db:migrate
    
-3. **Start server**
+5. **Start server**
     ```bash
    rails server
