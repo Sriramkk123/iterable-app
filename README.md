@@ -9,7 +9,7 @@ To start the application
    ```bash
    export iterable_io_api_key="YOUR_API_KEY"
    
-2. ** Install all dependencies**
+2. **Install all dependencies**
 
    ```bash
    bundle install
