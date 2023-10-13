@@ -35,7 +35,6 @@ class IterableIoService
       "recipientUserId": user.id.to_s,
       "sendAt": DateTime.parse(Time.now.to_s).strftime("%Y-%m-%d %H:%M:%S"),
       "dataFields": {},
-      "clickedUrl": "https://www.iterable.com"
     }
     begin
       RestClient.post("#{@base_url}email/target", request_body, headers: {
@@ -53,7 +52,6 @@ class IterableIoService
     {
       "email": user.email,
       "messageId": event.id.to_s,
-      "clickedUrl": "https://www.iterable.com"
     }
   end
 end

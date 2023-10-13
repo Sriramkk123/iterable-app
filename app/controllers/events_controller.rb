@@ -14,7 +14,8 @@ class EventsController < ApplicationController
   private
 
   def initialize_iterable_io_service
-    @iterable_io_service = IterableIoService.new("dummy_key")
+    puts ENV["iterable_io_api_key"]
+    @iterable_io_service = IterableIoService.new(ENV["iterable_io_api_key"])
   end
 
   def create_event(event_type)
