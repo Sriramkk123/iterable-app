@@ -3,12 +3,20 @@ class EventsController < ApplicationController
 
   def web_push
     create_event(:web_push)
-    @iterable_io_service.create_web_push_event(@user, @event)
+    begin
+      @iterable_io_service.create_web_push_event(@user, @event)
+    rescue FailedToCreateEventException => err
+      puts err.to_s
+    end
   end
 
   def mobile_push
     create_event(:mobile_push)
-    @iterable_io_service.create_mobile_push_event(@user, @event)
+    begin
+      @iterable_io_service.create_mobile_push_event(@user, @event)
+    rescue FailedToCreateEventException => err
+      puts err.to_s
+    end
   end
 
   private

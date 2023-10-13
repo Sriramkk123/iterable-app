@@ -14,6 +14,7 @@ class IterableIoService
       })
     rescue RestClient::ExceptionWithResponse => err
       puts err.to_s
+      raise FailedToCreateEventException, "Failed to create web push event"
     end
   end
 
@@ -26,6 +27,7 @@ class IterableIoService
       })
     rescue RestClient::ExceptionWithResponse => err
       puts err.to_s
+      raise FailedToCreateEventException, "Failed to create mobile push event"
     end
   end
 
